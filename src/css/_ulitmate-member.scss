@@ -1,0 +1,156 @@
+main {
+    margin-top: 100px;
+
+    .login-section,
+    .register-section {
+        min-height: 100vh !important;
+
+        .um-form {
+            input.um-form-field {
+                border  : 2px solid $theme-color1 !important;
+                border-radius: 10px !important;
+            }
+
+            label {
+                color: $theme-color1 !important;
+                margin-top: 20px 0px 5px 0px !important;
+            }
+
+            i.um-icon-android-checkbox-outline-blank {
+                color: $theme-color1 !important;
+            }
+            
+            span.um-field-checkbox-option {
+                color: $theme-color1 !important;
+            }
+
+            input.um-button {
+                height: 50px !important;
+                width: 200px !important;
+                min-width: 200px !important;
+                margin: 30px 10px 20px 10px !important;
+                background-color: $theme-color3 !important;
+                color: $theme-color1 !important;
+                border: 2px solid $theme-color1 !important;
+                border-radius: 15px !important;
+            }
+
+            a.um-link-alt {
+                color: $theme-color1 !important;
+            }
+        }
+
+        .um-half {
+            @extend .btn;
+            .um-button {
+                background: none !important;
+                background-color: none !important;
+                font-weight: bold !important;
+                color: $theme-color1 !important;
+                box-shadow: none !important;
+            }
+        }
+
+        .um-toggle-gdpr {
+            font-weight : bold;
+            margin      : 10px 0px 10px 0px;
+        }
+
+        .um-gdpr-content{
+            border          : 1px solid $theme-color1;
+            border-radius   : 10px;
+            background-color: $theme-color5;
+            padding         : 20px;
+        }
+    }
+
+    .account-section {
+        min-height: 100vh !important;
+
+        .um-form {
+            input.um-form-field {
+                border  : 2px solid $theme-color1 !important;
+                border-radius: 10px !important;
+                max-width: 500px !important;
+            }
+
+            label {
+                color: $theme-color1 !important;
+                margin-top: 20px 0px 5px 0px !important;
+            }
+
+            input.um-button {
+                height: 50px !important;
+                width: 200px !important;
+                min-width: 200px !important;
+                margin: 30px 10px 20px 10px !important;
+                background-color: $theme-color3 !important;
+                color: $theme-color1 !important;
+                border: 2px solid $theme-color1 !important;
+                border-radius: 15px !important;
+            }
+
+        }
+    }
+
+    .password-reset-section {
+        min-height: 100vh !important;
+
+        .um-field-block {
+            display: none;
+        }
+
+        input.um-button {
+            height: 50px !important;
+            width: 200px !important;
+            min-width: 200px !important;
+            margin: 30px 10px 20px 10px !important;
+            background-color: $theme-color3 !important;
+            color: $theme-color1 !important;
+            border: 2px solid $theme-color1 !important;
+            border-radius: 15px !important;
+        }
+
+        input.um-form-field {
+            border  : 2px solid $theme-color1 !important;
+            border-radius: 10px !important;
+        }
+    }
+}    
+
+.um-account-meta-img {
+    display: none;
+}
+
+.um-account-name {
+    display: none;
+}
+
+.um-misc-with-img {
+    .um-misc-img {
+        display: none;
+    }
+
+    strong {
+        font-size: $font-size-xl;
+    }
+}
+
+.um-misc-ul {
+    li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            @extend .btn;
+            display: inline-block;
+            line-height: 50px;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+}
