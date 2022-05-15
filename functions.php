@@ -23,17 +23,17 @@ add_action( 'after_setup_theme', 'setup_theme' );
 /**
  * Register side_bar
  */
-function widgetsidebar_init() {
+function widget_sidebar_init() {
 	register_sidebar(array(
-		'name'=>'sidebar_c',
-		'id' => 'sidebar_c',
-		'before_widget'=>'<div class="sidebar-wrapper">',
+		'name'=>'sidebar',
+		'id' => 'sidebar',
+		'before_widget'=>'<div class="sidebar">',
 		'after_widget'=>'</div>',
-		'before_title' => '<h3 class="sidebar-title">',
+		'before_title' => '<h3 class="sidebar">',
 		'after_title' => '</h3>'
 	));
 }
-add_action( 'widgets_init', 'widgetsidebar_init' );
+add_action( 'widgets_init', 'widget_sidebar_init' );
 
 
 /**
@@ -83,6 +83,28 @@ function shortcode_Posts(){
 	return $html;
 }
 add_shortcode('recent_Posts', 'shortcode_Posts');
+
+function shortcode_Events(){
+	$args = array(
+		'post_type'      => 'event',
+		'posts_per_page' => 5,
+		'post_status'    => 'publish'
+	);
+	$news_array = get_posts($args);
+
+	$html = '<ul>';
+	foreach($news_array as $news):
+		setup_postdata($news);
+		$html .= '<li>';
+		$html .= '<a href="'.$news->guid.'">'.$news->post_title.'</a>';
+		$html .= '</li>';
+	endforeach;
+	$html .= '</ul>';
+
+	wp_reset_postdata();
+	return $html;
+}
+add_shortcode('recent_Events', 'shortcode_Events');
 
 function shortcode_Separator(){
 	$html = '<div class="separator">--------------------</div>';

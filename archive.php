@@ -7,17 +7,14 @@ get_header();
 		<?php
 		if ( have_posts() ) :
 		?>
-
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header>
-
 			<?php
 			while ( have_posts() ) :
 				the_post();
+			?>
+				<a href=<?php the_permalink();?>>
+					<?php the_title(); ?>
+				</a>
+			<?php
 			endwhile;
 			the_posts_navigation();
 

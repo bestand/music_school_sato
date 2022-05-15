@@ -36,7 +36,7 @@ body {
 
 header {
     color           : $theme-color1;
-    background-color: $transparent;
+    background-color: $theme-color2;
     position        : fixed;
     z-index         : 999;
     top             : 0;

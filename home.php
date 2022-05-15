@@ -7,6 +7,7 @@ get_header();
 		<?php
 		if ( have_posts() ) :
 		?>
+
 			<?php
 			while ( have_posts() ) :
 				the_post();
@@ -26,5 +27,6 @@ get_header();
 	</main>
 
 <?php
+get_sidebar();
 get_footer();
 ?>

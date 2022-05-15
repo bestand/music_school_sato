@@ -9,7 +9,7 @@ get_header();
 			the_post();
 		?>
 		<div class="main-section__title">
-			<h1 class="main-section__title__item_main"><?php echo esc_html(get_post_meta($post->ID, "item_order", true)); ?>. <?php the_title(); ?></h1>
+			<h1 class="main-section__title__item_main"><?php echo esc_html(get_post_meta($post->ID, "item_order", true)); ?><?php the_title(); ?></h1>
 		</div>
 		<div class="main-section__content_article">
 			<div class="main-section__date">
@@ -34,6 +34,5 @@ get_header();
 </main>
 
 <?php
-get_sidebar();
 get_footer();
 ?>

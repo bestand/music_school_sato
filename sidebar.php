@@ -7,11 +7,11 @@
  * @package j-gym
  */
 
-if ( ! is_active_sidebar( 'sidebar_c' ) ) {
+if ( ! is_active_sidebar( 'sidebar' ) ) {
 	return;
 }
 ?>
 
 <aside>
-	<?php dynamic_sidebar( 'sidebar_c' ); ?>
+	<?php dynamic_sidebar( 'sidebar' ); ?>
 </aside>
