@@ -2,11 +2,8 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WHDSS39');</script>
-	<!-- End Google Tag Manager -->
-	<title>【事務×GYM】 | 事務職を目指す方・事務スキル向上を目指す方のための学習サイト</title>
-	<meta name="description" content="事務職を目指す方・事務のスキルアップを目指す方のための学習サイト"/>
+	<title>佐藤由基 声楽教室 | 小田急線柿生駅より徒歩10分の声楽教室</title>
+	<meta name="description" content="佐藤由基 声楽教室は神奈川県川崎市麻生区の声楽教室です。小田急線 柿生駅より徒歩10分とアクセス良好。小さいお子さんから、音大受験を目指す学生さん、趣味で取り組みたい社会人まで幅広いレッスンが可能です。"/>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -15,14 +12,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHDSS39"	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	
 	<header>
 		<div class="site-title">
 			<a class="site-title__link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">	
-				<h1 class="service-name">事務×GYM</h1>
+				<h1 class="service-name">佐藤 由基 声楽教室</h1>
 			</a>
 		</div>
 		<button type="button" class="hamburger-btn">

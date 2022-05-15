@@ -1,13 +1,11 @@
 {
-  "name": "j-gym_s",
+  "name": "music_school_sato",
   "version": "1.0.0",
-  "description": "j-gym's template",
+  "description": "music_school_sato",
   "private": true,
-  "author": "BESTAND, Inc.",
+  "author": "BESTAND Co. Ltd.",
   "license": "GPL-2.0-or-later",
-  "keywords": [
-    "J-GYM"
-  ],
+  "keywords": [],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",

@@ -1,9 +1,9 @@
 // 変数宣言
-$theme-color1: #1a251d;
-$theme-color2: #f1f1f1;
-$theme-color3: #FFEC07;
-$theme-color4: #006c8c;
-$theme-color5: #e4ecfb;
+$theme-color1: #021B19;
+$theme-color2: #E7F7F5;
+$theme-color3: #17B39D;
+$theme-color4: #A2E0D7;
+$theme-color5: #F2F2F2;
 $theme-color6: #dbe5eb;
 
 $font-size-xs  :0.75rem;
@@ -19,13 +19,12 @@ $mq-sp          :480px;
 $mq-tb          :810px;
 $mq-pc          :1280px;
 
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&family=Zen+Maru+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import "_module.scss";
-@import "_ulitmate-member.scss";
 @import "_contact-form-7.scss";
 
 html {
-    font-family: 'Zen Maru Gothic','Zen Kaku Gothic Antique','Avenir','Helvetica Neue','Helvetica','Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 body {
@@ -57,8 +56,6 @@ header {
 
         .service-name {
             font-size: $font-size-l;
-            font-style: italic;
-            font-weight: bold;
         }
     }
 
