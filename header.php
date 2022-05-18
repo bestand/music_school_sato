@@ -18,14 +18,9 @@
 				<h1 class="service-name">佐藤 由基 声楽教室</h1>
 			</a>
 		</div>
-		<!-- <button type="button" class="hamburger-btn">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button> -->
 		<nav id="header-menu">
 			<?php wp_nav_menu( array( 'theme_location' => 'header_menu' )); ?>
 		</nav>
 		<?php echo do_shortcode('[addtoany]'); ?>
-		<?php echo do_shortcode('[button]'); ?>
+		<?php echo do_shortcode('[button cta=お申込み・お問い合わせ link=/contact]'); ?>
 	</header>

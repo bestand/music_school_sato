@@ -1,0 +1,84 @@
+article {
+
+    h1,h2,h3,h4,h5,h6 {
+        margin      : 20px 0px 15px 0px;
+        font-weight : bold;
+    }
+    h1 { font-size   : 2.0rem; }
+    h2 { font-size   : 1.7rem; }
+    h3 { font-size   : 1.3rem; }
+    h4 { font-size   : 1.2rem; }
+    h5 { font-size   : 1.1rem; }
+    h6 { font-size   : 1.1rem; }
+
+    p {
+        font-size   : 1.1rem;
+        margin      : 10px 0px 10px 0px;
+        line-height : 1.25;
+        a {
+            color           :$theme-color4;
+            text-decoration : underline;
+            font-size       : $font-size-s;
+            &:active{
+                color : $theme-color3;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+        margin          : 10px auto 10px auto;
+    }
+
+    ol {
+        list-style-type: decimal-leading-zero;
+        margin          : 10px auto 10px auto;
+    }
+
+    li {
+        margin: 5px 0px 5px 20px;
+    }
+
+    table {
+        border          : 2px solid $theme-color4;
+        margin          : 10px auto 10px auto;
+        td, tr, th {
+            border      : 2px solid $theme-color4;
+            padding     : 10px 10px 10px 10px; 
+        }
+    }
+
+    figure {
+        margin: 20px auto 20px auto;
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            margin : 10px auto 10px auto;
+            width: 90%;
+            max-width: 750px;
+        }
+
+        figcaption {
+            font-size: $font-size-xs;
+        }
+    }
+
+    strong {
+        color               : $theme-color4;
+        background-color    : $theme-color3;
+    }
+
+    b {
+        font-size       : bold ;
+    }
+
+    hr {
+        margin: 50px 0px 30px 0px; 
+        color :$theme-color4;
+    }
+}

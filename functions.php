@@ -48,14 +48,14 @@ function shortcode_News(){
 	);
 	$news_array = get_posts($args);
 
-	$html = '<ul>';
+	$html = '<div class="recent-news"><ul>';
 	foreach($news_array as $news):
 		setup_postdata($news);
 		$html .= '<li>';
-		$html .= '<a href="'.$news->guid.'">'.$news->post_title.'</a>';
+		$html .= '<a href="'.$news->guid.'"><span class="news-date">'.date('Y年m月d日', strtotime($news->post_date)).'</span><span class="news-title">'.$news->post_title.'</span></a>';
 		$html .= '</li>';
 	endforeach;
-	$html .= '</ul>';
+	$html .= '</ul></div>';
 
 	wp_reset_postdata();
 	return $html;
@@ -68,13 +68,13 @@ function shortcode_Posts(){
 		'posts_per_page' => 3,
 		'post_status'    => 'publish'
 	);
-	$news_array = get_posts($args);
+	$posts_array = get_posts($args);
 
 	$html = '<ul>';
-	foreach($news_array as $news):
-		setup_postdata($news);
+	foreach($posts_array as $post):
+		setup_postdata($post);
 		$html .= '<li>';
-		$html .= '<a href="'.$news->guid.'">'.$news->post_title.'</a>';
+		$html .= '<a href="'.$post->guid.'"><span class="post-date">'.date('Y年m月d日', strtotime($post->post_date)).'</span><span class="post-title">'.$post->post_title.'</span></a>';
 		$html .= '</li>';
 	endforeach;
 	$html .= '</ul>';
@@ -87,16 +87,16 @@ add_shortcode('recent_Posts', 'shortcode_Posts');
 function shortcode_Events(){
 	$args = array(
 		'post_type'      => 'event',
-		'posts_per_page' => 5,
+		'posts_per_page' => 10,
 		'post_status'    => 'publish'
 	);
-	$news_array = get_posts($args);
+	$events_array = get_posts($args);
 
 	$html = '<ul>';
-	foreach($news_array as $news):
-		setup_postdata($news);
+	foreach($events_array as $event):
+		setup_postdata($event);
 		$html .= '<li>';
-		$html .= '<a href="'.$news->guid.'">'.$news->post_title.'</a>';
+		$html .= '<a href="'.$event->guid.'">'.$event->post_title.'</a>';
 		$html .= '</li>';
 	endforeach;
 	$html .= '</ul>';
@@ -107,13 +107,18 @@ function shortcode_Events(){
 add_shortcode('recent_Events', 'shortcode_Events');
 
 function shortcode_Separator(){
-	$html = '<div class="separator">--------------------</div>';
+	$html = '<div class="separator"></div>';
 	return $html;
 }
 add_shortcode('separator', 'shortcode_Separator');
 
-function shortcode_Button(){
-	$html = '<button class="separator">お申込み・お問い合わせ</button>';
+function shortcode_Button($atts){
+	$atts = shortcode_atts(
+        array(
+            'cta' => 'More >>',
+            'link' => '/',
+        ), $atts, 'button' );
+	$html = '<a href='. $atts['link'] .'><button>'.$atts['cta'].'</button></a>';
 	return $html;
 }
 add_shortcode('button', 'shortcode_Button');
