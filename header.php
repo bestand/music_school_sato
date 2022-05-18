@@ -14,13 +14,22 @@
 <body <?php body_class(); ?>>
 	<header>
 		<div class="site-title">
-			<a class="site-title__link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">	
+			<a class="site-title__link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<h1 class="service-name">佐藤 由基 声楽教室</h1>
 			</a>
 		</div>
-		<nav id="header-menu">
-			<?php wp_nav_menu( array( 'theme_location' => 'header_menu' )); ?>
-		</nav>
-		<?php echo do_shortcode('[addtoany]'); ?>
-		<?php echo do_shortcode('[button cta=お申込み・お問い合わせ link=/contact]'); ?>
+		<button type="button" class="hamburger-btn">
+			<span class="btn-line"></span>
+		</button>
+		<div class="header-menu">
+			<nav id="header-menu-nav">
+				<?php wp_nav_menu( array( 'theme_location' => 'header_menu' )); ?>
+			</nav>
+			<div class="header-sns_sharing">
+				<?php dynamic_sidebar('sidebar'); ?>
+			</div>
+			<div class="header-button_cta">
+				<?php echo do_shortcode('[button cta=お申込み・お問い合わせ link=/contact]'); ?>
+			</div>
+		</div>
 	</header>
