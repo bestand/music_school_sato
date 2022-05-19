@@ -1,89 +1,106 @@
 main {
     section{
         &#lesson-section-campaign {
-            width: 50%;
             .wp-block-group__inner-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
+            button {
+                margin-top: 15px;
+                margin-bottom: 15px;
             }
         }
 
         &#lesson-section-scene {
-            width: 50%;
             .wp-block-group__inner-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+            p {
+                margin-bottom: 15px;
+            }
+            button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
         }
 
         &#lesson-section-course {
-            width: 50%;
             .wp-block-group__inner-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
 
-                .all-course {
+            .all-course {
+                .wp-block-group__inner-container {
+                    display         : flex;
+                    flex-direction  : row;
+                    flex-wrap       : wrap;
+                    justify-content : center;
+                }
+
+                .course {
+                    width       : 30%;
+                    min-width   : 300px;
+                    margin      : 10px 10px 10px 10px;
+
                     .wp-block-group__inner-container {
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .course-title {
+                        width: 100%;
+                        height: 50px;
+                        border-radius: 5px 5px 0 0;
+                        background-color: $theme-color3;
+                        border: 1px solid $theme-color3;
+                        color: $theme-color2;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                         justify-content: center;
 
-                        .course {
-                            width: 30%;
-                            margin-left: 5px;
-                            margin-right: 5px;
+                        h5 {
+                            font-weight: bold;
+                        }
+                    }
 
-                            .wp-block-group__inner-container {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
+                    .course_content {
+                        padding : 5px 10px 5px 10px ;
+                        width: 100%;
+                        border: 1px solid $theme-color3;
+                        background-color: $theme-color2;
+                        border-radius: 0 0 5px 5px;
+                        height: 300px;
 
-                                .course-title {
-                                    width: 100%;
-                                    height: 50px;
-                                    border-radius: 5px 5px 0 0;
-                                    background-color: $theme-color3;
-                                    border: 1px solid $theme-color3;
-                                    color: $theme-color2;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    justify-content: center;
-    
-                                    h5 {
-                                        font-weight: bold;
-                                    }
-                                }
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
 
-                                .course_content {
-                                    padding : 5px 5px 5px 20px ;
-                                    width: 100%;
-                                    border: 1px solid $theme-color3;
-                                    background-color: $theme-color2;
-                                    border-radius: 0 0 5px 5px;
-                                    height: 350px;
-    
-                                    h6{
-                                        margin-top: 15px;
-                                        margin-bottom: 5px;
-                                        font-weight: bold;
-                                        text-decoration: underline;
-                                    }
-    
-                                    p {
-                                        font-size: $font-size-s;
-                                        text-align: center;
-                                    }
-                                }
-                            }
+                        h6{
+                            margin-top: 15px;
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                            text-decoration: underline;
+                        }
 
+                        p {
+                            font-size: $font-size-s;
+                            text-align: center;
                         }
                     }
                 }
+            }
 
+            button {
+                margin-top: 15px;
+                margin-bottom: 15px;
             }
         }
     }

@@ -6,64 +6,9 @@ main {
                 flex-direction: column;
                 align-items: center;
             }
-        }
-
-        &#profile-section-concert{
-            .wp-block-group__inner-container{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            h2 {
-                font-weight: bold;
-                font-size: $font-size-l;
-            }
-
-            h4 {
-                margin-top:20px;
-            }
-
-            th {
-                color:$theme-color1;
-                background-color: $theme-color2;
-            }
-
-            td {
-                color:$theme-color1;
-            }
-
-            .schedule {
-                li {
-                    border-bottom: 1px solid $theme-color3;
-                    padding-top:5px;
-                    padding-bottom:5px;
-                }
-            }
-
-            button {
-                border : 1px solid $theme-color3;
-                background-color: $theme-color2;
-                box-shadow: none;
-                width: 100px;
-
-                &.fc-prev-button {
-                    border-radius: 20px 0px 0px 20px;
-                }
-                &.fc-next-button {
-                    border-radius: 0px 20px 20px 0px;
-                }
-                &.fc-today-button {
-                    border-radius: 10px 10px 10px 10px;
-                }
-                &.fc-month-button {
-                    border-radius: 10px 10px 10px 10px;
-                    margin-right: 5px;
-                }
-                &.fc-agendaWeek-button {
-                    border-radius: 10px 10px 10px 10px;
-                    margin-left: 5px;
-                }
+            p {
+                margin-bottom: 10px;
+                text-align: center;
             }
         }
 
@@ -95,6 +40,11 @@ main {
                         margin-right: 10px;
                     }
                 }
+            }
+
+            button {
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
         }
     }

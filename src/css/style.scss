@@ -2,24 +2,25 @@
 
 // 変数宣言
 $theme-color1: #021B19;
-$theme-color2: #E7F7F5;
+$theme-color2: #F0FFFF;
 $theme-color3: #17B39D;
 $theme-color4: #A2E0D7;
 $theme-color5: #F2F2F2;
-$theme-color6: #dbe5eb;
+$theme-color6: #107D6D;
+$theme-color7: #083E36;
 
 $font-size-xs  :0.75rem;
 $font-size-s   :0.9rem;
 $font-size-m   :1.0rem;
-$font-size-l   :1.5rem;
-$font-size-xl  :2.0rem;
+$font-size-l   :1.3rem;
+$font-size-xl  :1.9rem;
 
-$white         :#ffffff;
+$white         :#FFFFFF;
 $transparent   :rgba(0, 0, 0, 0);
 
-$mq-sp          :480px;
-$mq-tb          :820px;
-$mq-pc          :1280px;
+$mq-sp          :481px;
+$mq-tb          :821px;
+$mq-pc          :1281px;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
@@ -29,6 +30,7 @@ $mq-pc          :1280px;
 @import "_front-page.scss";
 @import "_page-lesson.scss";
 @import "_page-profile.scss";
+@import "_page-schedule.scss";
 @import "_page-access.scss";
 @import "_page-contact.scss";
 @import "_single.scss";
@@ -36,6 +38,8 @@ $mq-pc          :1280px;
 
 html {
     font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body {
@@ -85,7 +89,6 @@ main {
         h4 {
             font-size: $font-size-m;
             margin-bottom: 20px;
-            font-weight: bold;
             text-align: center;
         }
     }

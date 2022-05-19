@@ -26,10 +26,10 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'header_menu' )); ?>
 			</nav>
 			<div class="header-sns_sharing">
-				<?php dynamic_sidebar('sidebar'); ?>
+				<?php dynamic_sidebar('sns'); ?>
 			</div>
 			<div class="header-button_cta">
-				<?php echo do_shortcode('[button cta=お申込み・お問い合わせ link=/contact]'); ?>
+				<?php echo do_shortcode('[button cta=お申込み・お問い合わせ>> link=/contact]'); ?>
 			</div>
 		</div>
 	</header>

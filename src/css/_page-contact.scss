@@ -1,39 +1,55 @@
-.wpcf7 {
+.wp-block-contact-form-7-contact-form-selector{
+    margin-top: 30px !important;
 
-    p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+    .wpcf7 {
+        p {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
 
-    &-form-control {
-        background-color: $white !important;
-        color           : $theme-color1 !important;
-        border          : 1px solid $theme-color1 !important;
-        border-radius   : 5px !important;
-        margin-top      : 5px !important;
-    }
+        &-form-control {
+            background-color: $white !important;
+            color           : $theme-color1 !important;
+            border          : 1px solid $theme-color1 !important;
+            border-radius   : 5px !important;
+            margin-top      : 2px !important;
+            width           : 100% !important;
+        }
 
-    .radio {
-        border: none !important;
-    }
+        input, textarea {
+            padding:5px !important;
+        }
 
-    span {
-        margin-top: 10px;
-    }
+        .radio {
+            border: none !important;
+        }
 
-    &-submit {
-        height          : 50px !important;
-        width           : 200px !important;
-        min-width       : 200px !important;
-        margin          : 30px 10px 20px 10px !important;
-        background-color: $theme-color3 !important;
-        color           : $theme-color2 !important;
-        border          : none !important;
-        border-radius   : 15px !important;
+        span {
+            margin-top: 10px !important;
+        }
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        &-submit {
+            height          : 50px !important;
+            width           : 200px !important;
+            min-width       : 200px !important;
+            margin          : 30px 10px 20px 10px !important;
+            background-color: $theme-color3 !important;
+            color           : $theme-color2 !important;
+            border          : none !important;
+            border-radius   : 15px !important;
+            border-bottom   : 5px solid $theme-color6 !important;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:active {
+                margin-top      : 33px !important;
+                color           : $theme-color2 !important;
+                background-color: $theme-color6 !important;
+                border-bottom   : 2px solid $theme-color7 !important;
+            }
+        }
     }
 }

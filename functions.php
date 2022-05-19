@@ -25,11 +25,11 @@ add_action( 'after_setup_theme', 'setup_theme' );
  */
 function widget_sidebar_init() {
 	register_sidebar(array(
-		'name'=>'sidebar',
-		'id' => 'sidebar',
-		'before_widget'=>'<div class="sidebar">',
+		'name'=>'sns',
+		'id' => 'sns',
+		'before_widget'=>'<div class="sns">',
 		'after_widget'=>'</div>',
-		'before_title' => '<h3 class="sidebar">',
+		'before_title' => '<h3 class="sns">',
 		'after_title' => '</h3>'
 	));
 }
@@ -96,7 +96,7 @@ function shortcode_Events(){
 	foreach($events_array as $event):
 		setup_postdata($event);
 		$html .= '<li>';
-		$html .= '<a href="'.$event->guid.'">'.$event->post_title.'</a>';
+		$html .= '<a href="'.$event->guid.'">'.eo_get_schedule_start( 'Y年Mj日 ', $event->ID)." ".$event->post_title.'</a>';
 		$html .= '</li>';
 	endforeach;
 	$html .= '</ul>';

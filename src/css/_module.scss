@@ -1,11 +1,19 @@
 button {
     color           : $theme-color2;
     background-color: $theme-color3;
-    border-radius   : 20px;
+    border-radius   : 10px;
     height          : 50px;
-    width           : 150px;
+    width           : 200px;
     text-align      : center;
     font-weight     : bold;
+    border-bottom   : 3px solid $theme-color6;
+
+    &:active {
+        margin-top      : 2px;
+        color           : $theme-color2;
+        background-color: $theme-color6;
+        border-bottom   : 1px solid $theme-color7;
+    }
 }
 
 .separator {
